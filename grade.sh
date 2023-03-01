@@ -18,7 +18,7 @@ fi
 cd ..
 
 cp student-submission/ListExamples.java ./
-set +e
+set +e # set +e turn auto-exit off
 javac -cp $CPATH *.java 2>compile.txt
 
 if [[ $? -eq 0 ]]
